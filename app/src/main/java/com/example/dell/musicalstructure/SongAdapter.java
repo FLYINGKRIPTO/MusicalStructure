@@ -12,7 +12,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class SongAdapter extends ArrayAdapter {
+public class SongAdapter extends ArrayAdapter<List> {
     private static final String LOG_TAG = SongAdapter.class.getSimpleName();
 
     public SongAdapter(Activity context, ArrayList<List> song_details) {
@@ -23,7 +23,6 @@ public class SongAdapter extends ArrayAdapter {
             if (listItemView == null) {
                 listItemView = LayoutInflater.from(getContext()).inflate(
                         R.layout.song_list_item, parent, false);
-
             }
 
             List currentList  = (List) getItem(position);
@@ -33,7 +32,7 @@ public class SongAdapter extends ArrayAdapter {
             song_name.setText(currentList.getmSongName());
             TextView artist_name = listItemView.findViewById(R.id.artist_name);
             artist_name.setText(currentList.getmArtistName());
-           return listItemView;
+            return listItemView;
         }
 }
 
