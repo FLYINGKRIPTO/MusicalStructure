@@ -4,12 +4,14 @@ public class List {
     private String mSongName;
     private String mArtistName;
     private int mImageResourceId;
+    private int mBgResourceId;
 
      public List(String songName,String artistName, int imageResourceId)
      {
          this.mSongName = songName;
          this.mArtistName = artistName;
          this.mImageResourceId= imageResourceId;
+
      }
      public String getmSongName(){
          return mSongName;
@@ -22,4 +24,5 @@ public class List {
      {
          return mImageResourceId;
      }
+
 }

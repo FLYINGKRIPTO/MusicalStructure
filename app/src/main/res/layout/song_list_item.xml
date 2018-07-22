@@ -4,14 +4,13 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/activity_two_bg"
     xmlns:tools="http://schemas.android.com/tools">
 
     <ImageView
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="10dp"
         android:layout_marginStart="10dp"
         android:id="@+id/list_background_1"
-        android:layout_height="150dp"
+        android:layout_height="110dp"
         android:layout_width="wrap_content"
         android:paddingTop="20dp"
         android:paddingLeft="55dp"
@@ -19,28 +18,28 @@
         />
     <ImageView
         android:id="@+id/album_image"
-        android:layout_width="65dp"
-        android:layout_height="85dp"
-        android:layout_marginTop="225dp"
+        android:layout_width="50dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="35dp"
         android:layout_marginLeft="55dp"
         android:background="@drawable/thunder"
         />
     <TextView
         android:id="@+id/song_name"
-        android:layout_marginTop="225dp"
+        android:layout_marginTop="35dp"
         android:layout_marginLeft="140dp"
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         tools:text="Thunder"
-        android:textSize="36sp"
+        android:textSize="20sp"
         />
     <TextView
         android:id="@+id/artist_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="275dp"
+        android:layout_marginTop="65dp"
         android:layout_marginLeft="140dp"
         tools:text="Imagine Dragons"
-        android:textSize="20sp"
+        android:textSize="14sp"
         />
 </RelativeLayout>
