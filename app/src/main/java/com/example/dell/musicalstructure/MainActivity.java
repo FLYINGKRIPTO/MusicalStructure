@@ -17,8 +17,8 @@ public class MainActivity extends AppCompatActivity {
         play_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent playingNowIntent = new Intent(MainActivity.this,PlayingNow.class);
-                startActivity(playingNowIntent);
+                Intent songsListIntent = new Intent(MainActivity.this,SongList.class);
+                startActivity(songsListIntent);
             }
         });
     }
