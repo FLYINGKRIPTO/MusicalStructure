@@ -10,12 +10,10 @@ import android.widget.ListView;
 import java.util.ArrayList;
 
 public class SongList extends AppCompatActivity{
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.song_list);
-
         final ArrayList<List> song_details = new ArrayList<List>();
         song_details.add(new List("Thunder", "Imagine Dragons", R.drawable.thunderdd));
         song_details.add(new List("Attention","Charlie Puth",R.drawable.attentiondd));
@@ -27,12 +25,10 @@ public class SongList extends AppCompatActivity{
         song_details.add(new List("Red","Taylor Swift",R.drawable.reddd));
         song_details.add(new List("Magenta Riddim","DJ Snake",R.drawable.magenta));
         song_details.add(new List("Cold Water","Justin Beiber",R.drawable.coldwaterdd));
-
         final SongAdapter adapter  = new SongAdapter(this,song_details);
         final ListView listView = (ListView)findViewById(R.id.list);
         listView.setAdapter(adapter);
-
-       listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
            @Override
            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
               String TempListViewClickedValue = song_details.get(position).getmSongName();
@@ -43,11 +39,7 @@ public class SongList extends AppCompatActivity{
               playingNowIntent.putExtra("ListViewClickedImage",TempListViewClickedImage);
               playingNowIntent.putExtra("ListViewClickedArtist",TempListviewClickedArtist);
                startActivity(playingNowIntent);
-
-
-
            }
        });
-
     }
 }

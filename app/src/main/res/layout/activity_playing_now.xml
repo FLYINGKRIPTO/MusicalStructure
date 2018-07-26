@@ -40,7 +40,6 @@
         android:textSize="@dimen/textSizeSmall"
         android:layout_centerHorizontal="true"
         android:textColor="@color/magenta"
-
         />
     <ImageView
         android:layout_width="350dp"

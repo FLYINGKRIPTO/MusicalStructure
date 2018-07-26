@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools">
-
     <ImageView
         android:layout_marginTop="@dimen/songListMarginStart"
         android:layout_marginStart="@dimen/songListMarginStart"
@@ -22,7 +21,6 @@
         android:layout_height="@dimen/paddingStart"
         android:layout_marginTop="@dimen/thirtyfive"
         android:layout_marginStart="@dimen/paddingStart"
-
         />
     <TextView
         android:id="@+id/song_name"

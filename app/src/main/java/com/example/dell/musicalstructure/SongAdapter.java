@@ -9,12 +9,9 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import java.util.ArrayList;
-
 public class SongAdapter extends ArrayAdapter<List> {
     private static final String LOG_TAG = SongAdapter.class.getSimpleName();
-
     public SongAdapter(Activity context, ArrayList<List> song_details) {
         super(context, 0, song_details);
     }
@@ -24,7 +21,6 @@ public class SongAdapter extends ArrayAdapter<List> {
                 listItemView = LayoutInflater.from(getContext()).inflate(
                         R.layout.song_list_item, parent, false);
             }
-
             List currentList  = (List) getItem(position);
             ImageView album_image =listItemView.findViewById(R.id.album_image);
             album_image.setImageResource(currentList.getmImageResourceId());
@@ -32,7 +28,6 @@ public class SongAdapter extends ArrayAdapter<List> {
             song_name.setText(currentList.getmSongName());
             TextView artist_name = listItemView.findViewById(R.id.artist_name);
             artist_name.setText(currentList.getmArtistName());
-
             return listItemView;
         }
 }
