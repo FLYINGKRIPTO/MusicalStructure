@@ -10,7 +10,7 @@
         android:layout_marginStart="@dimen/songListMarginStart"
         android:id="@+id/list_background_1"
         android:layout_height="@dimen/songListHeight"
-        android:layout_width="wrap_content"
+        android:layout_width="330dp"
         android:paddingTop="@dimen/twenty"
         android:paddingStart="@dimen/paddingStart"
         android:background="@drawable/list_layout_2"
