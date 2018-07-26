@@ -4,7 +4,7 @@ public class List {
     private String mSongName;
     private String mArtistName;
     private int mImageResourceId;
-    private int mBgResourceId;
+
 
      public List(String songName,String artistName, int imageResourceId)
      {

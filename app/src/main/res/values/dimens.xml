@@ -2,4 +2,27 @@
 <resources>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="nowPlayingMarginTop">40dp</dimen>
+    <dimen name="songNameMarginTop">130dp</dimen>
+    <dimen name="textSizeMedium">30sp</dimen>
+    <dimen name="image_width">230dp</dimen>
+    <dimen name="image_marginTOp">180dp</dimen>
+    <dimen name="artistMarginTop">400dp</dimen>
+    <dimen name="textSizeSmall">20sp</dimen>
+    <dimen name="seekbar_marginTop">470dp</dimen>
+    <dimen name="playButtonMarginStart">155dp</dimen>
+    <dimen name="playButtonMarginTop">490dp</dimen>
+    <dimen name="buttonMarginTop">500dp</dimen>
+    <dimen name="previousMarginStart">80dp</dimen>
+    <dimen name="nextMarginStart">240dp</dimen>
+    <dimen name="playButtonWidth">290dp</dimen>
+    <dimen name="playButtonHeight">50dp</dimen>
+    <dimen name="songListHeight">110dp</dimen>
+    <dimen name="songListMarginStart">10dp</dimen>
+    <dimen name="paddingStart">55dp</dimen>
+    <dimen name="twenty">20dp</dimen>
+    <dimen name="albumMarginTop">135dp</dimen>
+    <dimen name="textSizeExtraSmall">14sp</dimen>
+    <dimen name="thirtyfive">35dp</dimen>
+    <dimen name="sixtyFive">65dp</dimen>
 </resources>

@@ -7,39 +7,39 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <ImageView
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="10dp"
+        android:layout_marginTop="@dimen/songListMarginStart"
+        android:layout_marginStart="@dimen/songListMarginStart"
         android:id="@+id/list_background_1"
-        android:layout_height="110dp"
+        android:layout_height="@dimen/songListHeight"
         android:layout_width="wrap_content"
-        android:paddingTop="20dp"
-        android:paddingLeft="55dp"
+        android:paddingTop="@dimen/twenty"
+        android:paddingStart="@dimen/paddingStart"
         android:background="@drawable/list_layout_2"
         />
     <ImageView
         android:id="@+id/album_image"
-        android:layout_width="50dp"
-        android:layout_height="55dp"
-        android:layout_marginTop="35dp"
-        android:layout_marginLeft="55dp"
-        android:background="@drawable/thunder"
+        android:layout_width="@dimen/playButtonHeight"
+        android:layout_height="@dimen/paddingStart"
+        android:layout_marginTop="@dimen/thirtyfive"
+        android:layout_marginStart="@dimen/paddingStart"
+
         />
     <TextView
         android:id="@+id/song_name"
-        android:layout_marginTop="35dp"
-        android:layout_marginLeft="140dp"
+        android:layout_marginTop="@dimen/thirtyfive"
+        android:layout_marginStart="@dimen/songListHeight"
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         tools:text="Thunder"
-        android:textSize="20sp"
+        android:textSize="@dimen/textSizeSmall"
         />
     <TextView
         android:id="@+id/artist_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="65dp"
-        android:layout_marginLeft="140dp"
+        android:layout_marginTop="@dimen/sixtyFive"
+        android:layout_marginStart="@dimen/songListHeight"
         tools:text="Imagine Dragons"
-        android:textSize="14sp"
+        android:textSize="@dimen/textSizeExtraSmall"
         />
 </RelativeLayout>

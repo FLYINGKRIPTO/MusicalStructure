@@ -10,53 +10,70 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/nowplaying"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="@dimen/nowPlayingMarginTop"
         android:layout_centerHorizontal="true"
         />
     <TextView
         android:id="@+id/song_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="130dp"
-        android:text="Thunder"
-        android:textSize="30sp"
+        android:layout_marginTop="@dimen/songNameMarginTop"
+        android:text="@string/songName"
+        android:textSize="@dimen/textSizeMedium"
         android:layout_centerHorizontal="true"
         android:textColor="@color/magenta"
         />
     <ImageView
         android:id="@+id/song_image"
-        android:layout_width="230dp"
-        android:layout_height="230dp"
-        android:layout_marginTop="180dp"
-        android:layout_centerHorizontal="true"
+        android:layout_width="@dimen/image_width"
+        android:layout_height="@dimen/image_width"
+        android:layout_marginTop="@dimen/image_marginTOp"
+        android:layout_marginStart="80dp"
         android:src="@drawable/thunderdd"
+        />
+    <TextView
+        android:id="@+id/artist_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/artistMarginTop"
+        android:text="@string/artistName"
+        android:textSize="@dimen/textSizeSmall"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/magenta"
+
         />
     <ImageView
         android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="410dp"
+        android:layout_marginTop="@dimen/seekbar_marginTop"
         android:layout_centerHorizontal="true"
         android:src="@drawable/seekbar"
         />
-     <ImageView
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-         android:layout_marginTop="430dp"
-         android:layout_centerHorizontal="true"
-         android:src="@drawable/play"
-         />
-     <ImageView
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-         android:layout_marginTop="440dp"
-         android:src="@drawable/previous"
-         android:layout_marginStart="60dp"
-         />
+
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="440dp"
+        android:layout_marginStart="@dimen/playButtonMarginStart"
+        android:layout_marginTop="@dimen/playButtonMarginTop"
+        android:clickable="true"
+        android:src="@drawable/play"
+        android:focusable="true" />
+     <ImageView
+         android:id="@+id/previous_button"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="@dimen/buttonMarginTop"
+         android:src="@drawable/previous"
+         android:layout_marginStart="@dimen/previousMarginStart"
+         android:clickable="true"
+         android:focusable="true" />
+    <ImageView
+        android:id="@+id/next_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/buttonMarginTop"
         android:src="@drawable/next"
-        android:layout_marginStart="260dp"
-        />
+        android:layout_marginStart="@dimen/nextMarginStart"
+        android:clickable="true"
+        android:focusable="true" />
 </RelativeLayout>

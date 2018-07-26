@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">MusicalStructure</string>
+    <string name="songName">Thunder</string>
+    <string name="artistName">Coldplay</string>
 </resources>
